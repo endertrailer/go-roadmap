@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func arrays() {
 	// numbers := [10]int{100, 123, 1, 15, 53, 213, 43, 23, 432, 12}
@@ -17,4 +20,11 @@ func arrays() {
 		total += number
 	}
 	fmt.Printf("total = %f \n", total)
+	// array manipulatrion
+	// insert into a array
+	sliceArr := []string{"hello", "world"}
+	s := slices.Insert(sliceArr, 2, "morning")
+	for _, word := range s {
+		fmt.Printf("%s \n", word)
+	}
 }
