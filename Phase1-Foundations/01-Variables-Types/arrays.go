@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"slices"
+	"sort"
 )
 
 func arrays() {
@@ -26,5 +27,12 @@ func arrays() {
 	s := slices.Insert(sliceArr, 2, "morning")
 	for _, word := range s {
 		fmt.Printf("%s \n", word)
+	}
+	// sorting array
+	numbers := [6]int{10, 2, 34, 5, 66, 7}
+	sort.Ints(numbers[:])
+
+	for _, number := range numbers {
+		fmt.Printf("%d \n", number)
 	}
 }
