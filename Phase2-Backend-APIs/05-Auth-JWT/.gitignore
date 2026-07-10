@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Learning notes & documentation created during study
+WHAT_I_LEARNED.md
+
+# Compiled binaries and test executables
+test_server
+05-Auth-JWT
+*.exe
+*.test
+*.out
