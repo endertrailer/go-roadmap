@@ -23,11 +23,8 @@ func (r *PostgresRepo) GetUserByUsername(ctx context.Context, username string) (
 	if err != nil {
 		return nil, err
 	}
-	return &user, err
+	return &user, nil
 }
-
-
-
 
 func (r *PostgresRepo) DeleteUser(ctx context.Context, id string) error {
 	// TODO: Implement the SQL query to delete a user by ID (e.g., "DELETE FROM users WHERE id = $1") using r.db.Exec
